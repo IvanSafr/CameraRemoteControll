@@ -8,12 +8,11 @@
 unsigned const int ConnectionAdress = 5;
 
 
-// Константы для подключения Arduino
-#define PIN_TX 2
-#define PIN_RX 3
-#define PIN_M0 4
-#define PIN_M1 5
-#define PIN_AX 6
+#define PIN_TX 10
+#define PIN_RX 11
+#define PIN_M0 13
+#define PIN_M1 12
+#define PIN_AX 8
 
 SoftwareSerial E22Serial(PIN_TX, PIN_RX, false);  // Создаем объект SoftwareSerial для соединения с модулем через программный UART
 
@@ -33,8 +32,8 @@ Servo X_servo;
 Servo Y_servo;
 
 // Укажите пины подключения к серво c шим
-int X_servoPin = 3; 
-int Y_servoPin = 7; 
+int X_servoPin = 5; 
+int Y_servoPin = 3; 
 
 int x_position = 1500;
 int y_position = 1500;
